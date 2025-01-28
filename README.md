@@ -7,12 +7,13 @@
 1. Сбор данных
   готовые датасеты:
 
-    Для русской речи: Golos, Common Voice (Russian).
-    https://github.com/sberdevices/golos
+    Для русской речи: Golos
+     - https://github.com/sberdevices/golos
+   
     Для эмоций: RAVDESS, CREMA-D.
-   https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio
-   https://github.com/CheyneyComputerScience/CREMA-D
+      - https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio
+      - https://github.com/CheyneyComputerScience/CREMA-D
 
 3. Взять предобученную модель (например, Wav2Vec 2.0) для извлечения признаков из аудио.
-4. Fine-tune на задаче классификации эмоций с использованием английского датасета (RAVDESS или CREMA-D).
-5. Затем адаптировать на русскую речь через fine-tuning или использование русскоязычных данных (например, Golos).
+4. Классификация эмоций с использованием английского датасета (RAVDESS или CREMA-D).
+5. Затем адаптировать на русскую речь через fine-tuning с использованием русскоязычных данных (Golos).
